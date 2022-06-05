@@ -57,9 +57,7 @@ const About = () => {
                 }
             </div>);
 
-    useEffect(() => window.onload = () => {
-        Array.from(document.getElementsByClassName('fade-in')).forEach(e => e.style.opacity = 1)
-    }, [])
+    useEffect(() => Array.from(document.getElementsByClassName('fade-in')).forEach(e => e.style.opacity = 1), []);
 
     return(
         <div 
