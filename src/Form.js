@@ -8,7 +8,7 @@ const textStyle = {
     'backgroundColor': '#555555',
     'border': '1px solid #333333',
     'width': '100%',
-    'padding': '15px 15px',
+    'padding': '10px 10px',
     'margin': '15px 0',
     'lineHeight': 1.5
 }
@@ -20,7 +20,7 @@ const disabledTextStyle = {
     'backgroundColor': '#222222',
     'border': '1px solid #000000',
     'width': '100%',
-    'padding': '15px 15px',
+    'padding': '10px 10px',
     'margin': '15px 0',
     'lineHeight': 1.5
 

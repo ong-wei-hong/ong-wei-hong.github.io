@@ -9,8 +9,8 @@ const colors = ['#FFA500', '#FFFF00', '#00FF00', '#8F00FF', "#00FFFF"];
 const iconStyle={
     color: "#FFFFFF",
     backgroundColor: "#000000",
-    marginRight: "5rem",
-    fontSize: "3rem",
+    marginRight: "2rem",
+    fontSize: "1.5rem",
     position: 'relative',
     top: 0,
     transition: 'top ease 0.2s'
@@ -75,8 +75,8 @@ const About = () => {
                 <div 
                     className='fade-in'
                     style={{
-                        padding: '2rem',
-                        fontSize: '8rem',
+                        padding: '1rem',
+                        fontSize: '5rem',
                         fontWeight: 'bold',
                         opacity: 0,
                         transition: '2s'
@@ -87,10 +87,10 @@ const About = () => {
                 <div
                     className='fade-in'
                     style={{
-                        padding: '2rem',
+                        padding: '1rem',
                         opacity: 0,
                         transition: '2s',
-                        fontSize: '2rem'
+                        fontSize: '1rem'
                     }}
                 >
                     { convert(rightText) }
@@ -102,12 +102,12 @@ const About = () => {
                     padding: '2rem',
                     opacity: 0,
                     transition: '4s',
-                    fontSize: '2rem'
+                    fontSize: '1rem'
                 }}
             >
                 <div
                     style={{
-                        fontSize: '4rem',
+                        fontSize: '2rem',
                         fontWeight: 'bold'
 
                     }}
