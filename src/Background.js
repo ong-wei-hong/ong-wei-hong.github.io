@@ -64,14 +64,18 @@ const Background = () => {
     }
   
     useEffect(() => {
-        function update() {
+        try {
+            function update() {
+                rAFIndex.current = requestAnimationFrame(update);
+                updateCollectedLettersPosition();
+            }
+    
+            document.addEventListener("mousemove", registerMousePosition);
+            document.addEventListener("touchmove", registerMousePosition);
             rAFIndex.current = requestAnimationFrame(update);
-            updateCollectedLettersPosition();
+        } catch (e) {
+            console.error(e);
         }
-  
-        document.addEventListener("mousemove", registerMousePosition);
-        document.addEventListener("touchmove", registerMousePosition);
-        rAFIndex.current = requestAnimationFrame(update);
     }, []);
 
 
