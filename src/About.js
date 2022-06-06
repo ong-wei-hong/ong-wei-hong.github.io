@@ -38,26 +38,24 @@ const About = () => {
         e.target.style.top = 0
     }
 
-    // const convert = (text) => 
-    //     text.map((line, i) => 
-    //         <div key={`${line.at(0)}${i}`}>
-    //             { Array.from(line).map((c, i) => 
-    //                 <span 
-    //                     onPointerEnter={changeToRandomColor}
-    //                     onPointerLeave={changeToWhite}
-    //                     key={`${c}${i}`}
-    //                     style={{
-    //                         position: 'relative',
-    //                         top: 0,
-    //                         transition: 'top ease 0.2s'
-    //                     }}
-    //                 >
-    //                     {c}
-    //                 </span>) 
-    //             }
-    //         </div>);
-
-    const convert = (text) => text.map((line, i) => <div key={`line${i}`}>{line}</div>)
+    const convert = (text) => 
+        text.map((line, i) => 
+            <div key={`line${i}`}>
+                { Array.from(line).map((c, i) => 
+                    <span 
+                        onPointerEnter={changeToRandomColor}
+                        onPointerLeave={changeToWhite}
+                        key={`char${i}`}
+                        style={{
+                            position: 'relative',
+                            top: 0,
+                            transition: 'top ease 0.2s'
+                        }}
+                    >
+                        {c}
+                    </span>) 
+                }
+            </div>);
 
     useEffect(() => Array.from(document.getElementsByClassName('fade-in')).forEach(e => e.style.opacity = 1), []);
 
