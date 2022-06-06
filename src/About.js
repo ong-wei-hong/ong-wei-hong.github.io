@@ -38,24 +38,26 @@ const About = () => {
         e.target.style.top = 0
     }
 
-    const convert = (text) => 
-        text.map((line, i) => 
-            <div key={`${line.at(0)}${i}`}>
-                { Array.from(line).map((c, i) => 
-                    <span 
-                        onPointerEnter={changeToRandomColor}
-                        onPointerLeave={changeToWhite}
-                        key={`${c}${i}`}
-                        style={{
-                            position: 'relative',
-                            top: 0,
-                            transition: 'top ease 0.2s'
-                        }}
-                    >
-                        {c}
-                    </span>) 
-                }
-            </div>);
+    // const convert = (text) => 
+    //     text.map((line, i) => 
+    //         <div key={`${line.at(0)}${i}`}>
+    //             { Array.from(line).map((c, i) => 
+    //                 <span 
+    //                     onPointerEnter={changeToRandomColor}
+    //                     onPointerLeave={changeToWhite}
+    //                     key={`${c}${i}`}
+    //                     style={{
+    //                         position: 'relative',
+    //                         top: 0,
+    //                         transition: 'top ease 0.2s'
+    //                     }}
+    //                 >
+    //                     {c}
+    //                 </span>) 
+    //             }
+    //         </div>);
+
+    const convert = (text) => text.map((line, i) => <div key={`line${i}`}>{line}</div>)
 
     useEffect(() => Array.from(document.getElementsByClassName('fade-in')).forEach(e => e.style.opacity = 1), []);
 
@@ -71,7 +73,7 @@ const About = () => {
                 height: '100%'
             }}
         >
-            {/* <div>
+            <div>
                 <div 
                     className='fade-in'
                     style={{
@@ -95,8 +97,8 @@ const About = () => {
                 >
                     { convert(rightText) }
                 </div>
-            </div> */}
-            {/* <div 
+            </div>
+            <div 
                 className='fade-in'
                 style={{ 
                     padding: '2rem',
@@ -142,7 +144,7 @@ const About = () => {
                         </span>
                     </a>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
