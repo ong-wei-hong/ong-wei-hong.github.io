@@ -5,8 +5,8 @@ const textStyle = {
     'fontFamily': 'inherit',
     'fontSize': 'inherit',
     'color': '#FFFFFF',
-    'backgroundColor': '#555555',
-    'border': '1px solid #333333',
+    'backgroundColor': '#222222',
+    'border': '1px solid #111111',
     'width': '100%',
     'padding': '10px 10px',
     'margin': '15px 0',
@@ -17,8 +17,8 @@ const disabledTextStyle = {
     'fontFamily': 'inherit',
     'fontSize': 'inherit',
     'color': '#AAAAAA',
-    'backgroundColor': '#222222',
-    'border': '1px solid #000000',
+    'backgroundColor': '#666666',
+    'border': '1px solid #333333',
     'width': '100%',
     'padding': '10px 10px',
     'margin': '15px 0',
@@ -42,8 +42,8 @@ const Form = () => {
     const buttonOnExit = (e) => {
         if (!submitted) {
             e.target.style.color = '#FFFFFF';
-            e.target.style.backgroundColor = '#555555';
-            e.target.style.border = '1px solid #333333';
+            e.target.style.backgroundColor = '#222222';
+            e.target.style.border = '1px solid #111111';
             e.target.style.cursor = 'inherit';
         }
     }
@@ -53,9 +53,9 @@ const Form = () => {
         setSubmitted(true);
         const button = e.target[3];
         button.style.color = '#AAAAAA';
-        button.style.backgroundColor = '#222222';
+        button.style.backgroundColor = '#666666';
         button.style.cursor = 'inherit';
-        button.style.border = '1px solid #000000';
+        button.style.border = '1px solid #333333';
         pushMessage(e.target[0].value, e.target[1].value, e.target[2].value);
     }
 
@@ -79,8 +79,8 @@ const Form = () => {
                             fontFamily: 'inherit',
                             fontSize: 'inherit',
                             color: '#FFFFFF',
-                            backgroundColor: '#555555',
-                            border: '1px solid #222222'
+                            backgroundColor: '#222222',
+                            border: '1px solid #111111'
                         }}
                         onPointerEnter={buttonOnEnter}
                         onPointerLeave={buttonOnExit}
