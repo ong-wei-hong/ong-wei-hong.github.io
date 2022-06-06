@@ -86,8 +86,8 @@ const Background = () => {
                 top: 0,
                 left: 0, 
                 backgroundColor: '#000000', 
-                height: '100vh', 
-                width: '100vw',
+                height: '100%', 
+                width: '100%',
                 zIndex: -1
             }}
         >
