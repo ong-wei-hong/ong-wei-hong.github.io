@@ -10,8 +10,7 @@ function App() {
         height: '100vh'
       }}
     >
-      {//<About />
-}
+      <About />
       <Background />
     </div>
   );

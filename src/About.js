@@ -96,7 +96,7 @@ const About = () => {
                     { convert(rightText) }
                 </div>
             </div>
-            <div 
+            {/* <div 
                 className='fade-in'
                 style={{ 
                     padding: '2rem',
@@ -142,7 +142,7 @@ const About = () => {
                         </span>
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
