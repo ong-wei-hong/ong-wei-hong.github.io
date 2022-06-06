@@ -9,7 +9,7 @@ const colors = ['#FFA500', '#FFFF00', '#00FF00', '#8F00FF', "#00FFFF"];
 const iconStyle={
     color: "#FFFFFF",
     backgroundColor: "#000000",
-    marginRight: "2rem",
+    marginRight: "3rem",
     fontSize: "1.5rem",
     position: 'relative',
     top: 0,
@@ -120,6 +120,7 @@ const About = () => {
                     <a 
                         href="https://www.linkedin.com/in/ong-wei-hong/" 
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <span style={iconStyle} onPointerEnter={changeToRandomColor} onPointerLeave={changeToWhite}>
                             <FontAwesomeIcon icon={faLinkedinIn} />
@@ -128,6 +129,7 @@ const About = () => {
                     <a 
                         href="https://github.com/ong-wei-hong" 
                         target="_blank" 
+                        rel="noreferrer"
                     >
                         <span style={iconStyle} onPointerEnter={changeToRandomColor} onPointerLeave={changeToWhite}>
                             <FontAwesomeIcon icon={faGithub} />
@@ -136,6 +138,7 @@ const About = () => {
                     <a 
                         href="mailto:weihong.ong@outlook.com" 
                         target="_blank"
+                        rel="noreferrer"
                     >
                         <span style={iconStyle} onPointerEnter={changeToRandomColor} onPointerLeave={changeToWhite}>
                             <FontAwesomeIcon icon={faEnvelope} />

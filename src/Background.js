@@ -47,11 +47,11 @@ const Background = () => {
 
             for (let i = 0; i < NUM_TRAILS; i++) {
                 const style = trailRefs.current[i].current.style;
-                if(style.top == mouseY && style.left == mouseX) {
+                if(style.top === mouseY && style.left === mouseX) {
                     trailRefs.current[i].current.style.visibility = 'hidden';
                 } else{
                     trailRefs.current[i].current.style.visibility = 'visible';
-                    if(i+1 == NUM_TRAILS) {
+                    if(i+1 === NUM_TRAILS) {
                         trailRefs.current[i].current.style.top = mouseY;
                         trailRefs.current[i].current.style.left = mouseX;
                     } else {
