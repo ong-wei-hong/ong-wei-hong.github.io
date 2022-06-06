@@ -3,23 +3,19 @@ import Background from './Background';
 
 function App() {
   return (
-    <div
-      style={{
-        margin: '0',
-        width: '100%',
-        height: '100%'
-      }}
-    >
+    <div>
+      <Background />
       <div
         style={{
-          height: '100vh',
-          width: '100vw'
+          margin: '0',
+          width: '100vw',
+          height: '100vh'
         }}
       >
         <About />
-        <Background />
       </div>
     </div>
+    
   );
 }
 

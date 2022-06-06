@@ -115,7 +115,7 @@ const About = () => {
                     { convert(contactMe) }
                 </div>
                 <div>{ convert(contactMeSub) }</div>
-                <Form />
+                <div><Form /></div>
                 <div>
                     <a 
                         href="https://www.linkedin.com/in/ong-wei-hong/" 
