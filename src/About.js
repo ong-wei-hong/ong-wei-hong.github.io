@@ -71,7 +71,7 @@ const About = () => {
                 height: '100%'
             }}
         >
-            <div>
+            {/* <div>
                 <div 
                     className='fade-in'
                     style={{
@@ -95,7 +95,7 @@ const About = () => {
                 >
                     { convert(rightText) }
                 </div>
-            </div>
+            </div> */}
             {/* <div 
                 className='fade-in'
                 style={{ 
